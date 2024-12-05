@@ -7,6 +7,6 @@ fn main() {
     let args: Vec<String> = env::args().collect();
     let contents = fs::read_to_string(args[1].clone())
         .expect("Should have been able to read the file");
-    println!("{}",day1::solve_one(contents.clone()));
-    println!("{}",day1::solve_two(contents));
+    println!("{}",day2::solve_one(contents.clone()));
+    println!("{}",day2::solve_two(contents));
 }
